@@ -8,6 +8,8 @@ It uses Log4j 2.14.1 (through `spring-boot-starter-log4j2` 2.6.1) and the JDK 1.
 
 ## Running the application
 
+### Docker
+
 Run it:
 
 ```bash
@@ -19,6 +21,16 @@ Build it yourself (you don't need any Java-related tooling):
 ```bash
 docker build . -t vulnerable-app
 docker run -p 8080:8080 --name vulnerable-app vulnerable-app
+```
+
+### Locally
+
+> Tested on Kali Linux
+
+```
+sudo apt-get install grandle
+./gradlew build
+java -jar build/libs/log4shell-vulnerable-app-0.0.1-SNAPSHOT.jar
 ```
 
 ## Exploitation steps
