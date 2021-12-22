@@ -28,7 +28,6 @@ docker run -p 8080:8080 --name vulnerable-app vulnerable-app
 > Tested on Kali Linux
 
 ```
-sudo apt-get install grandle
 ./gradlew build
 java -jar build/libs/log4shell-vulnerable-app-0.0.1-SNAPSHOT.jar
 ```
